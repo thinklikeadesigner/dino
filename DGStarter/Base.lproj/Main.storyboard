@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Guesser View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GuesserViewController" customModule="DGStarter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ltF-FE-lpX" userLabel="Main Stack View">
+                                <rect key="frame" x="16" y="75" width="361" height="727"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="I1D-m5-SOb" userLabel="First Hoprizontal Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="358.66666666666669"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oHx-hb-12o" userLabel="First View">
+                                                <rect key="frame" x="0.0" y="0.0" width="175.66666666666666" height="358.66666666666669"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="I0X-fQ-1GA">
+                                                        <rect key="frame" x="16" y="16" width="143.66666666666666" height="326.66666666666669"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="gallimimus-silhouette" translatesAutoresizingMaskIntoConstraints="NO" id="jLO-2n-kAc">
+                                                                <rect key="frame" x="0.0" y="0.0" width="143.66666666666666" height="163.33333333333334"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4h3-eU-gSB">
+                                                                <rect key="frame" x="59.333333333333329" y="163.33333333333331" width="25" height="163.33333333333331"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="I0X-fQ-1GA" secondAttribute="trailing" constant="16" id="9jR-Vf-aSA"/>
+                                                    <constraint firstItem="I0X-fQ-1GA" firstAttribute="top" secondItem="oHx-hb-12o" secondAttribute="top" constant="16" id="EfQ-3X-pl1"/>
+                                                    <constraint firstItem="I0X-fQ-1GA" firstAttribute="leading" secondItem="oHx-hb-12o" secondAttribute="leading" constant="16" id="vWv-Jz-hZF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="I0X-fQ-1GA" secondAttribute="bottom" constant="16" id="ywg-kf-25R"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CeX-ZY-61e" userLabel="Third View">
+                                                <rect key="frame" x="185.66666666666663" y="0.0" width="175.33333333333337" height="358.66666666666669"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1TU-5F-Aqw">
+                                                        <rect key="frame" x="16" y="16" width="143.33333333333334" height="326.66666666666669"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="stegosaurus-silhouette" translatesAutoresizingMaskIntoConstraints="NO" id="jZh-Bx-AtX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="143.33333333333334" height="163.33333333333334"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAp-tL-dYx">
+                                                                <rect key="frame" x="59.000000000000028" y="163.33333333333331" width="25" height="163.33333333333331"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="1TU-5F-Aqw" firstAttribute="top" secondItem="CeX-ZY-61e" secondAttribute="top" constant="16" id="3EY-6n-BHs"/>
+                                                    <constraint firstItem="1TU-5F-Aqw" firstAttribute="leading" secondItem="CeX-ZY-61e" secondAttribute="leading" constant="16" id="5SH-lQ-OB0"/>
+                                                    <constraint firstAttribute="bottom" secondItem="1TU-5F-Aqw" secondAttribute="bottom" constant="16" id="FUK-Aw-rn7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1TU-5F-Aqw" secondAttribute="trailing" constant="16" id="MiG-8b-2yP"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nUa-dH-SyL" userLabel="Second Horizontal Stack View">
+                                        <rect key="frame" x="0.0" y="368.66666666666674" width="361" height="358.33333333333326"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDW-9q-tcF" userLabel="Second View">
+                                                <rect key="frame" x="0.0" y="0.0" width="175.66666666666666" height="358.33333333333331"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0HA-gh-r7x">
+                                                        <rect key="frame" x="16" y="16" width="143.66666666666666" height="326.33333333333331"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="tyrannosaurus-silhouette" translatesAutoresizingMaskIntoConstraints="NO" id="okK-wj-omb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="143.66666666666666" height="163"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lX-1F-8cW">
+                                                                <rect key="frame" x="59.333333333333329" y="162.99999999999994" width="25" height="163.33333333333331"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="0HA-gh-r7x" secondAttribute="bottom" constant="16" id="0TJ-SB-yr9"/>
+                                                    <constraint firstItem="0HA-gh-r7x" firstAttribute="leading" secondItem="nDW-9q-tcF" secondAttribute="leading" constant="16" id="F74-0C-Pia"/>
+                                                    <constraint firstItem="0HA-gh-r7x" firstAttribute="top" secondItem="nDW-9q-tcF" secondAttribute="top" constant="16" id="cKg-Wm-cO6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0HA-gh-r7x" secondAttribute="trailing" constant="16" id="czh-se-H52"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbG-Na-Zpf" userLabel="Fourth View">
+                                                <rect key="frame" x="185.66666666666663" y="0.0" width="175.33333333333337" height="358.33333333333331"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Sod-mG-yaK">
+                                                        <rect key="frame" x="16" y="16" width="143.33333333333334" height="326.33333333333331"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="brachiosaurus-silhouette" translatesAutoresizingMaskIntoConstraints="NO" id="iq3-2T-yo9">
+                                                                <rect key="frame" x="0.0" y="0.0" width="143.33333333333334" height="163"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec3-yQ-mhy">
+                                                                <rect key="frame" x="59.000000000000028" y="162.99999999999994" width="25" height="163.33333333333331"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Sod-mG-yaK" firstAttribute="top" secondItem="bbG-Na-Zpf" secondAttribute="top" constant="16" id="GOu-gC-3bb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Sod-mG-yaK" secondAttribute="trailing" constant="16" id="UbD-rZ-gsw"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Sod-mG-yaK" secondAttribute="bottom" constant="16" id="qRp-2T-8JU"/>
+                                                    <constraint firstItem="Sod-mG-yaK" firstAttribute="leading" secondItem="bbG-Na-Zpf" secondAttribute="leading" constant="16" id="qiV-wF-4iE"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ltF-FE-lpX" secondAttribute="bottom" constant="16" id="5r9-LE-jC7"/>
+                            <constraint firstItem="ltF-FE-lpX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="B89-OK-iA9"/>
+                            <constraint firstItem="ltF-FE-lpX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Eee-r6-gLs"/>
+                            <constraint firstAttribute="trailing" secondItem="ltF-FE-lpX" secondAttribute="trailing" constant="16" id="cFv-Pk-y82"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="brachiosaurus-silhouette" width="159.33332824707031" height="130"/>
+        <image name="gallimimus-silhouette" width="159.33332824707031" height="130"/>
+        <image name="stegosaurus-silhouette" width="159.33332824707031" height="130"/>
+        <image name="tyrannosaurus-silhouette" width="159.33332824707031" height="130"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
